@@ -1,0 +1,48 @@
+:root {
+    --commit0: #ebedf0;
+    --commitColor1: #c6e48b;
+    --commitColor2: #7bc96f;
+    --commitColor3: #239a3b;
+    --commitColor4: #196127;
+}
+
+.commits-table {
+    position: relative;
+    width: 822px;
+    padding: 30px;
+}
+
+.cells {
+    display: grid;
+    grid-gap: 3px;
+    grid-auto-flow: column;
+    grid-template: repeat(7, 1fr) / repeat(53, 1fr);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+}
+
+.cell.zero {
+    background: var(--commit0);
+}
+
+.cell.onec {
+    background: var(--commitColor1);
+}
+
+.cell.twoc {
+    background: var(--commitColor2);
+}
+
+.cell.fewc {
+    background: var(--commitColor3);
+}
+
+.cell.manyc {
+    background: var(--commitColor4);
+}
